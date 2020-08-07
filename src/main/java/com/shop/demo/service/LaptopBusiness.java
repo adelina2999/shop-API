@@ -8,4 +8,6 @@ public interface LaptopBusiness {
 
     List<LaptopView> getLaptops();
 
+    LaptopView postLaptop(LaptopView laptopView);
+
 }

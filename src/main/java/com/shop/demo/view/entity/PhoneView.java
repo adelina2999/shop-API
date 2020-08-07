@@ -16,5 +16,5 @@ public class PhoneView {
     private long id;
     private String name;
     private String color;
-    private float price;
+    private Integer price;
 }

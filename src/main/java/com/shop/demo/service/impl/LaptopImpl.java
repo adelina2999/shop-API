@@ -18,4 +18,9 @@ public class LaptopImpl implements LaptopBusiness {
     public List<LaptopView> getLaptops() {
         return laptopRepository.findAll();
     }
+
+    @Override
+    public LaptopView postLaptop(LaptopView laptopView) {
+        return laptopRepository.save(laptopView);
+    }
 }
