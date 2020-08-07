@@ -18,4 +18,9 @@ public class PhoneImpl implements PhoneBusiness {
     public List<PhoneView> getPhones() {
         return phoneRepository.findAll();
     }
+
+    @Override
+    public PhoneView postPhone(PhoneView phoneView) {
+        return phoneRepository.save(phoneView);
+    }
 }

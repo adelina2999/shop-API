@@ -8,4 +8,6 @@ public interface PhoneBusiness {
 
     List<PhoneView> getPhones();
 
+    PhoneView postPhone(PhoneView phoneView);
+
 }

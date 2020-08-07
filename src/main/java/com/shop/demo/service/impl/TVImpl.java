@@ -12,10 +12,15 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TVImpl implements TVBusiness {
 
-    public final TVRepository TVRepository;
+    public final TVRepository tvRepository;
 
     @Override
     public List<TVView> getTV() {
-        return TVRepository.findAll();
+        return tvRepository.findAll();
+    }
+
+    @Override
+    public TVView postTV(TVView tvView) {
+        return tvRepository.save(tvView);
     }
 }

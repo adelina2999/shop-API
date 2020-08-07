@@ -8,4 +8,7 @@ public interface TVBusiness {
 
     List<TVView> getTV();
 
+    TVView postTV(TVView tvView);
+
+
 }
